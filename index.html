@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aesthetics & AI Skin Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <h1>Aesthetics & AI Skin Analyzer</h1>
+    <p class="subtitle">Precision facial analysis & diagnostic intelligence</p>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Upload portrait</h2>
+        <input id="imageInput" type="file" accept="image/png,image/jpeg,image/webp">
+        <canvas id="canvas" width="700" height="520"></canvas>
+        <p class="note">Use even lighting and a front-facing portrait for better results.</p>
+      </div>
+
+      <div class="card">
+        <h2>Skin diagnosis</h2>
+        <div class="metrics">
+          <div><span>Clarity</span><strong id="clarity">—</strong></div>
+          <div><span>Smoothness</span><strong id="smoothness">—</strong></div>
+          <div><span>Eye tone</span><strong id="eyeTone">—</strong></div>
+        </div>
+        <div class="overall">
+          <span>Overall score</span>
+          <strong><b id="overall">—</b>/100</strong>
+          <div class="track"><i id="bar"></i></div>
+        </div>
+        <h3>Recommendations</h3>
+        <ul>
+          <li>Consider gentle hydration and barrier-supporting skincare.</li>
+          <li>Use sunscreen daily and avoid over-exfoliation.</li>
+          <li>Consult a qualified dermatologist for persistent concerns.</li>
+        </ul>
+        <p class="disclaimer">This is an educational image estimate, not a medical diagnosis.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
